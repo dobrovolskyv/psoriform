@@ -2401,7 +2401,9 @@ body {
   .solution__modal {
     margin-top: -30px;
   }
-
+  .solution__modal-title{
+    font-size: 42px;
+  }
   .solution__title {
     font-size: 40px;
   }
@@ -2413,9 +2415,7 @@ body {
   .solution .solution__img-triagle_2 {
     top: -24%;
   }
-.solution__modal-title{
-  font-size: 48px;
-}
+
   .psoriform {
     margin-top: 80px;
   }
@@ -2444,7 +2444,9 @@ body {
   .review {
     margin-bottom: 80px;
   }
-
+  .review__mobile{
+    max-height: 1100px;
+  }
   .review .container__mobile .arrow__left {
     margin-right: 24px;
   }
