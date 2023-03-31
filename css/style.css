@@ -2663,16 +2663,7 @@ body {
 }
 
 @media (max-width: 440px) {
-  .container__lg {
-    max-width: 400px;
-    
-  }
-
-  .container {
-    max-width: 380px;
-    
-  }
-
+ 
   
 
   .arrow__right {
