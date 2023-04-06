@@ -1087,6 +1087,15 @@ body {
   left: -8%;
   width: 18%;
 }
+.footer{
+  margin-top: 20px;
+}
+.footer__img-drug{
+  display: none;
+}
+.footer__triagle-2{
+  display: none;
+}
 @media(max-width: 1880px){
   .dermatologs__descr{
     padding-bottom: 30px;
@@ -2041,7 +2050,12 @@ body {
   .header__item-text {
     max-width: 350px;
   }
-
+  .header__bg-mobile{
+    display: block;
+  }
+  .footer__img-drug{
+    display: block;
+  }
   .header__img-drug {
     display: none;
   }
@@ -2483,6 +2497,18 @@ body {
     .header__btn-wrapper{
       padding: 12px;
     }
+    
+    .footer__triagle{
+      display: none;
+    }
+    .footer__triagle-2{
+      display: block;
+      position: absolute;
+      transform: rotate(135deg);
+      width: 30%;
+      top: 450px;
+      right: 0;
+    }
 }
 @media (max-width: 440px) {
 
@@ -2762,7 +2788,7 @@ body {
     font-size: 18px;
     line-height: 28px;
     text-align: left;
-    padding-left: 10px;
+    
   }
   .dermatologs__modal-text__left {
 
@@ -2796,9 +2822,7 @@ body {
   section.header .header__absolute-img__triagle {
     top: 19.5%;
   }
-  .footer__form-wrapper__mobile{
-    margin-top: -20px;
-  }
+ 
   .copyright__span{
     font-size: 16px;
     line-height: 26px;
@@ -2820,8 +2844,13 @@ body {
   .review .arrow__right{
     width: 120px;
   }
-  .review__content-text{
-
+  .footer__triagle-2{
+    display: block;
+    position: absolute;
+    transform: rotate(135deg);
+    width: 30%;
+    top: 380px;
+    right: 0;
   }
 }
 
