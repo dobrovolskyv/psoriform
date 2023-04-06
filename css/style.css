@@ -2480,6 +2480,9 @@ body {
     margin: -90px 0 30px 0;
     padding-right: 60px;
     }
+    .header__btn-wrapper{
+      padding: 12px;
+    }
 }
 @media (max-width: 440px) {
 
@@ -2531,9 +2534,6 @@ body {
     margin-left: 160px;
   }
 
-  .header__btn-wrapper {
-    padding: 11px 56px;
-  }
 
   .header__img-drug__mobile {
     margin-left: 0px;
@@ -2596,7 +2596,7 @@ body {
   }
 
   .psoriform__navigation .arrow__left {
-    margin-left: 5px;
+    margin-left: 46px;
   }
 
   .psoriform__advantages-contentbox {
@@ -2673,7 +2673,7 @@ body {
     line-height: 28px;
   }
   .header .menu__burger {
-    margin: 0 0 0 100px;
+    margin: 0 0 0 110px;
   }
   .header__enum-list{
     gap:10px;
@@ -2744,7 +2744,7 @@ body {
   }
 
   .solution .solution__img-triagle_3 {
-    bottom: 208%;
+    bottom: 220%;
     right: -9%;
   }
   .psoriform__advantages-img__container{
