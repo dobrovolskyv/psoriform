@@ -623,7 +623,7 @@ body {
 
 .solution__img {
   width: 50%;
-  height: 854px;
+  /* height: 854px; */
 }
 
 .solution__modal {
@@ -833,6 +833,7 @@ body {
   text-align: center;
   color: #000000;
 }
+
 
 .psoriform__mobile {
   display: none;
@@ -1209,27 +1210,18 @@ body {
     padding: 30px 30px;
   }
 }
-@media (max-width: 1440px){
-  .header__absolute-img__2 {
+
+@media (max-width: 1440px) {
+
+    .header__absolute-img__2 {
    
     right: 0%;
     bottom: 0%;
 }
-}
-@media (max-width: 1440px) {
   body{
     font-size: 18px;
     line-height: 130%;
   }
-  /* .container__lg {
-    max-width: 1240px;
-    padding: 0px 10px;
-  }
-
-  .container {
-    max-width: 1240px;
-    padding: 0px 10px;
-  } */
   .overtitle__text{
     font-size: 18px;
   }
@@ -1248,13 +1240,6 @@ body {
     line-height: 36px;
     max-width: 380px;
   }
-  /* .header__right {
-    height: 100%;
-  }
-  .header__right-img {
-    width: 98%;
-    height: 98%;
-  } */
 
   .header__form-undertitle{
     font-size: 18px;
@@ -1306,9 +1291,6 @@ body {
     left: -3%;
   }
 
-  .solution {
-    height: 45%;
-  }
   .solution__img-cream{
     display: none;
   }
@@ -1462,21 +1444,26 @@ body {
     margin-top: 10px;
   }
 }
+@media(max-width: 1240px){
+  .header__right-img{
+    height: 60%;
+  }
+  .header__symptoms {
+    margin-top: 0px;
+  }
+  .solution__img-wrapper{
+    display: none;
+  }
+  .solution__img-cream{
+    display: block;
+  }
+}
 @media (max-width: 1140px) {
   .title {
     font-size: 52px;
     line-height: 60px;
   }
 
-  /* .container__lg {
-    max-width: 1160px;
-    padding: 0 10px;
-  }
-
-  .container {
-    max-width: 920px;
-    padding: 0px 10px;
-  } */
 
   .header__left {
     margin-left: 10px;
@@ -1487,6 +1474,7 @@ body {
   }
   .header__right-img{
     margin-top: 30px;
+    
   }
   .header__img-drug {
     left: 44%;
@@ -1504,9 +1492,7 @@ body {
   .header__absolute-img__1 {
     display: none;
   }
-  .header__symptoms {
-    margin-top: 20px;
-  }
+ 
   .header__symptoms-content {
     justify-content: start;
     margin-top: 10px;
@@ -1540,13 +1526,29 @@ body {
     margin-top: 20px;
   }
 
+
+.solution .overtitle{
+  margin-top: 0;
+  z-index: 1;
+  position: relative;
+}
+  .solution__img{
+    width: 50%;
+  }
+
+
+
+
+
+
   .solution__text-second {
     margin-left: 20px;
   }
 
   .solution__descr {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 24px;
+    margin-top: 10px;
   }
 
   .solution__modal-descr {
@@ -1628,16 +1630,7 @@ body {
   }
 }
 
-@media (max-width: 940px) {
-  /* .container__lg {
-    max-width: 800px;
-   
-  }
-
-  .container {
-    max-width: 800px;
-    padding: 10px;
-  } */
+@media (max-width: 1000px) {
 
   .title {
     font-size: 42px;
@@ -1650,11 +1643,80 @@ body {
   }
 
   .header__top {
-    margin: 0 0 21px 0;
+    margin: 0 0 0px -20px;
+    width: 100%;
+  }
+
+
+  .header .nav {
+    display: none;
+  }
+  .header .menu__mobile {
+    display: block;
+    position: relative;
+  }
+
+  .header .menu__burger div {
+    width: 32px;
+    height: 3px;
+    margin-top: 10px;
+    background-color: #8F8F8F;
+    border-radius: 15%;
+    background: linear-gradient(94.49deg, #FF627A -3.59%, #FC7317 104.46%);
+  }
+
+  .header .nav__mobile {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    height: 0;
+    width: 340px;
+    overflow: hidden;
+    background: #FFFFFF;
+    z-index: 30;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .header .nav__mobile-list {
+    margin: 14px;
+  }
+
+  .header .nav__mobile-item {
+    position: relative;
+  }
+
+  .header .nav__mobile-item:hover {
+    background: #F5F5F5;
+  }
+
+  .header .nav__mobile-item:hover::before {
+    content: "";
+    height: 100%;
+    width: 8px;
+    background: linear-gradient(94.49deg, #FF627A -3.59%, #FC7317 104.46%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .header .nav__mobile-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    padding: 27px 0 26px 36px;
+    color: #8F8F8F;
+  }
+
+  .header .nav__mobile-text:hover {
+    color: #000000;
   }
 
   .header__top-btn {
-    max-width: 169px;
+    max-width: 290px;
     padding: 5px 25px;
   }
 
@@ -1676,9 +1738,9 @@ body {
     bottom: -8%;
   }
   .header__img-drug{
-    width: 80%;
-    left: 20%;
-    bottom: 0%;
+    width: 60%;
+    left: 40%;
+    bottom: 13%;
   }
   .header__symptoms-text__left {
     font-size: 56px;
@@ -1696,7 +1758,7 @@ body {
   }
 
   .psoriaz__example {
-    margin-top: -2px;
+    margin-top:-2px;
   }
 
   .solution__contentbox {
@@ -1765,12 +1827,7 @@ body {
     position: relative;
   }
   .psoriform__absolute-img-1__mobile {
-    position: absolute;
-    right: -8%;
-    top: 10%;
-    z-index: 10;
-    transform: rotate(135deg);
-    width: 23%;
+    display: none;
 }
 .psoriform__absolute-img-2__mobile {
   position: absolute;
@@ -1782,7 +1839,10 @@ body {
     align-items: start;
     max-width: 440px;
   }
-
+  .psoriform__img-mobile{
+    width: 55%;
+    margin-left: 150px;
+  }
   .psoriform__advantages {
     margin-top: 50px;
   }
@@ -1857,23 +1917,46 @@ body {
     margin-right: 50px;
   }
 }
-
+@media(max-width:860px){
+  .header__right-img{
+    margin-top: 60px;
+    height: 50%;
+  }
+  .header__img-drug{
+    width: 80%;
+    left: 20%;
+    bottom: 0%;
+  }
+  .header__symptoms-bot{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .header__symptoms-text__right{
+    margin-left: 10px;
+  }
+  .psoriaz__example {
+    margin-top:-20px;
+  }
+  .psoriaz__bg-img {
+    width: 60%;
+    margin-top: 290px;
+  }
+  .psoriaz__img-triagle_2{
+    right: 0;
+  }
+  .psoriform__absolute-img-1__mobile {
+    right: 0;
+  }
+  .dermatologs__modal{
+    padding: 20px 5px;
+  }
+  
+  .dermatologs__modal-content .header__symptoms-img{
+    width: 60px;
+    height: 60px;
+  }
+}
 @media (max-width: 767px) {
-  /* .container__lg {
-    max-width: 620px;
-    padding: 0 0px;
-    overflow: hidden;
-  }
-  .header__bg-mobile{
-    display: block;
-  }
-  .container {
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 0 0px;
-    overflow: hidden;
-  } */
-
   .title {
     font-size: 50px;
     line-height: 63px;
@@ -1911,70 +1994,6 @@ body {
     display: none;
   }
 
-  .header .menu__mobile {
-    display: block;
-    position: relative;
-  }
-
-  .header .menu__burger div {
-    width: 32px;
-    height: 3px;
-    margin-top: 10px;
-    background-color: #8F8F8F;
-    border-radius: 15%;
-    background: linear-gradient(94.49deg, #FF627A -3.59%, #FC7317 104.46%);
-  }
-
-  .header .nav__mobile {
-    position: absolute;
-    top: 30px;
-    right: 0px;
-    height: 0;
-    width: 340px;
-    overflow: hidden;
-    background: #FFFFFF;
-    z-index: 30;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-
-  .header .nav__mobile-list {
-    margin: 14px;
-  }
-
-  .header .nav__mobile-item {
-    position: relative;
-  }
-
-  .header .nav__mobile-item:hover {
-    background: #F5F5F5;
-  }
-
-  .header .nav__mobile-item:hover::before {
-    content: "";
-    height: 100%;
-    width: 8px;
-    background: linear-gradient(94.49deg, #FF627A -3.59%, #FC7317 104.46%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-  }
-
-  .header .nav__mobile-text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 27px;
-    padding: 27px 0 26px 36px;
-    color: #8F8F8F;
-  }
-
-  .header .nav__mobile-text:hover {
-    color: #000000;
-  }
 
   .header__btn-wrapper {
     display: block;
@@ -2053,7 +2072,7 @@ body {
     width: 26%;
   }
 
-  .no-webp .header__right {
+ .header__right {
     background-image: url("../img/header_img-mobile.png"); }
 
   .header__right {
@@ -2262,20 +2281,16 @@ body {
   .psoriform__advantages-text {
     max-width: 100%;
   }
-
+  .psoriform__img-mobile{
+    display: block;
+  }
   .psoriform__img {
+    display: none;
     width: 133%;
     margin-left: -17%;
   }
 
-  .psoriform__absolute-img-1__mobile {
-    position: absolute;
-    right: -8%;
-    top: 10%;
-    z-index: 10;
-    transform: rotate(135deg);
-    width: 23%;
-  }
+ 
 
   .psoriform__mobile {
     position: relative;
@@ -2380,12 +2395,6 @@ body {
 }
 
 @media (max-width: 560px) {
-  /* .container{
-    max-width: 500px;
-  }
-  .container__lg{
-    max-width: 500px;
-  } */
   .copyright {
     display: block;
   }
@@ -2421,14 +2430,19 @@ body {
     bottom: 44%;
   }
 .solution__descr{
- 
+  z-index: 10;
+  position: relative;
   text-align: left;
   margin: 10px auto 40px;
 }
   .solution .solution__img-triagle_2 {
-    top: -43%;
+    top: -33%;
   }
 
+  .psoriform__img-mobile{
+    width: 65%;
+    margin-left: 70px;
+  }
   .footer .header__top {
     display: none;
   }
@@ -2455,21 +2469,163 @@ body {
   section.header .header__absolute-img__triagle {
     top: 21%;
   }
+  .arrow__right{
+    width: 160px;
+  }
+  .dermatologs__text{
+    margin-right: 0;
+  }
+  .solution__img-mobile{
+    width: 100%;
+    margin: -90px 0 30px 0;
+    padding-right: 60px;
+    }
 }
+@media (max-width: 440px) {
 
-@media (max-width: 430px) {
+ 
+
+  .arrow__left {
+    margin-right: 24px;
+  }
+
+  .header .container__lg {
+    overflow: visible;
+  }
+
+  .header__top {
+    padding-top: 0px;
+    position: relative;
+    height: 100px;
+   
+  }
+
+  .header__top::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: #E2E2E2;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
+
+  .header__top::after {
+    content: "";
+    width: 145%;
+    height: 2px;
+    background: #E2E2E2;
+    position: absolute;
+    bottom: 0;
+    right: -28%;
+  
+  }
+
+  .header__absolute-img__2 {
+    top: 0;
+    right: -3%;
+  }
+
+  .header .menu__burger {
+    margin-top: 0;
+    margin-left: 160px;
+  }
+
+  .header__btn-wrapper {
+    padding: 11px 56px;
+  }
+
+  .header__img-drug__mobile {
+    margin-left: 0px;
+  }
+  .header__symptoms-text__left {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .header__symptoms-text__right {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 0;
+  }
+
+  .header__symptoms-content {
+    width: 197px;
+  }
+
+
+  .psoriaz__example {
+    padding: 0px 40px 43px;
+  }
+
+  .solution {
+    margin-top: 80px;
+  }
+
+  .solution__modal {
+    margin-top: -30px;
+    padding: 20px;
+  }
+  .solution__modal-descr{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+
+  .solution .solution__img-triagle_1 {
+    bottom: 38%;
+  }
+
+  .solution .solution__img-triagle_2 {
+
+      top: -27%;
+      left: -11%;
+      width: 26%;
+    
+  }
+  .psoriform {
+    margin-top: 80px;
+    overflow: hidden;
+  }
+
+.psoriform__subtitle{
+  font-size: 26px;
+  line-height: 34px;
+}
+  .psoriform__wrapper-mobile {
+    max-width: 360px;
+  }
+
+  .psoriform__navigation .arrow__left {
+    margin-left: 5px;
+  }
+
+  .psoriform__advantages-contentbox {
+    height: 150px;
+  }
+
+  .dermatologs__text {
+    margin-right: 0;
+  }
+
+  .dermatologs__absolute-2 {
+    display: block;
+    bottom: 39%;
+  }
+
+  .review {
+    margin-bottom: 80px;
+  }
+
+  .review .container__mobile .arrow__left {
+    margin-right: 24px;
+  }
+  
+}
+@media (max-width: 390px) {
   body{
     font-size: 16px;
     line-height: 24px;
   }
-    /* .container{
-      overflow: hidden;
-    }
-    .container__lg{
-    
-      overflow: hidden;
-
-    } */
     .overtitle__text{
       font-size: 18px;
     }
@@ -2497,17 +2653,17 @@ body {
     background: #E2E2E2;
     position: absolute;
     bottom: 0;
-    right: 20%;
+    right: 14%;
   }
 
   .header__top::after {
     content: "";
-    width: 140%;
+    width: 160%;
     height: 2px;
     background: #E2E2E2;
     position: absolute;
     bottom: 0;
-    right: -7%;
+    right: -34%;
   }
   .header__item{
     align-items: start;
@@ -2517,8 +2673,7 @@ body {
     line-height: 28px;
   }
   .header .menu__burger {
-    margin-right: 7px;
-    margin-top: -5px;
+    margin: 0 0 0 100px;
   }
   .header__enum-list{
     gap:10px;
@@ -2543,15 +2698,7 @@ body {
     width: 60px;
     height: 60px;
   }
-  .header__symptoms-text__left {
-    font-size: 42px;
-    line-height: 52px;
-  }
-  .header__symptoms-text__right {
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 0;
-  }
+ 
   .psoriaz .psoriaz__text{
     font-size: 18px;
     line-height: 28px;
@@ -2593,7 +2740,7 @@ body {
   }
 
   .solution .solution__img-triagle_2 {
-    top: -33%;
+    top: -25%;
   }
 
   .solution .solution__img-triagle_3 {
@@ -2659,158 +2806,23 @@ body {
   
   .arrow__right{
     margin-top: 20px;
-  }
-}
-
-@media (max-width: 440px) {
-  /* .container__lg {
-    max-width: 400px;
-    
-  }
-
-  .container {
-    max-width: 380px;
-    
-  }
-
-   */
-
-  .arrow__right {
-    width: 163px;
-  }
-
-  .arrow__left {
-    margin-right: 24px;
-  }
-
-  .header .container__lg {
-    overflow: visible;
-  }
-
-  .header__top {
-    padding-top: 0px;
-    position: relative;
-    height: 100px;
-  }
-
-  .header__top::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #E2E2E2;
-    position: absolute;
-    bottom: 0;
-    right: 20%;
-  }
-
-  .header__top::after {
-    content: "";
-    width: 110%;
-    height: 2px;
-    background: #E2E2E2;
-    position: absolute;
-    bottom: 0;
-    right: -4%;
-  }
-
-  .header__absolute-img__2 {
-    top: 0;
-    right: -3%;
-  }
-
-  .header .menu__burger {
-    margin-top: -5px;
-  }
-
-  .header__btn-wrapper {
-    padding: 11px 56px;
-  }
-
-  .header__img-drug__mobile {
-    margin-left: 0px;
-  }
-
-
-  .header__symptoms-content {
-    width: 197px;
-  }
-
-
-  .psoriaz__example {
-    padding: 0px 40px 43px;
-  }
-
-  .solution {
-    margin-top: 80px;
-  }
-
-  .solution__modal {
-    margin-top: -30px;
-    padding: 20px;
-  }
-  .solution__modal-descr{
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 0;
-  }
-
-  .solution .solution__img-triagle_1 {
-    bottom: 38%;
-  }
-
-  .solution .solution__img-triagle_2 {
+    width: 120px;
   
-      top: -32%;
-      left: -11%;
-      width: 26%;
-    
   }
-  .psoriform {
-    margin-top: 80px;
+  .review__mobile{
+    max-width: 100%;
+    max-height: 1250px;
   }
-.psoriform__subtitle{
-  font-size: 26px;
-  line-height: 34px;
-}
-  .psoriform__wrapper-mobile {
-    max-width: 360px;
+  .review__wrapper-mobile .review__content-text{
+    max-width: 100%;
+    padding: 40px 10px 10px 10px;
   }
+  .review .arrow__right{
+    width: 120px;
+  }
+  .review__content-text{
 
-  .psoriform__navigation .arrow__left {
-    margin-left: 5px;
   }
-
-  .psoriform__advantages-contentbox {
-    height: 150px;
-  }
-
-  .dermatologs__text {
-    margin-right: 0;
-  }
-
-  .dermatologs__absolute-2 {
-    display: block;
-    bottom: 39%;
-  }
-
-  .review {
-    margin-bottom: 80px;
-  }
-
-  .review .container__mobile .arrow__left {
-    margin-right: 24px;
-  }
-  
 }
 
-@media (max-width: 380px) {
-  .header__top::after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: #E2E2E2;
-    position: absolute;
-    bottom: 0;
-    right: 0%;
-  }
-}
+
